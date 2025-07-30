@@ -16,15 +16,10 @@ import (
 const (
 	// how much bytes take for every iteration through file data
 	FILE_DATA_ON_READ_PART_SIZE int64 = 200
-	// instead of two bytes for line break program use one byte
-	LINE_BREAK_COMPRESSED_BYTE byte = 0
-	// byte-separator, placed between file data and file name
-	FILE_NAME_SEPARATOR_BYTE byte = 255
 	// folders paths
 	INPUT_FOLDER  = "input"
 	OUTPUT_FOLDER = "output"
-	TEMP_FOLDER   = "temp"
-	// Compressed file extansion
+	// Compressed file extension
 	FILE_EXTENSION = "wrtaio"
 )
 
@@ -51,11 +46,11 @@ func init() {
 	}
 
 	if !inputFolderExists {
-		os.Remove(INPUT_FOLDER)
+		os.Remove(INPUT_FOLDER) // is theres file named "input" which is NOT a dir
 		os.Mkdir(INPUT_FOLDER, 0644)
 	}
 	if !outputFolderExists {
-		os.Remove(OUTPUT_FOLDER)
+		os.Remove(OUTPUT_FOLDER) // is theres file named "output" which is NOT a dir
 		os.Mkdir(OUTPUT_FOLDER, 0644)
 	}
 }
