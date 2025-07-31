@@ -67,7 +67,7 @@ func action_decompress() {
 	Message_FilesToDeompress := "Files to decompress:\n"
 
 	for i, filename := range compressedFiles {
-		Message_FilesToDeompress += fmt.Sprintf("%d. %s", i, filename)
+		Message_FilesToDeompress += fmt.Sprintf("%d. %s\n", i, filename)
 	}
 	fmt.Println(Message_FilesToDeompress)
 
@@ -134,7 +134,7 @@ func action_compress() {
 	Message_FilesToCompress := "Files to compress:\n"
 
 	for _, ent := range inputFiles {
-		Message_FilesToCompress += fmt.Sprintf("%d. %s", Count_FilesToCompress, ent.Name())
+		Message_FilesToCompress += fmt.Sprintf("%d. %s\n", Count_FilesToCompress, ent.Name())
 		Count_FilesToCompress++
 	}
 	fmt.Println(Message_FilesToCompress)
