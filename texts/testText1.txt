@@ -1,5 +1,6 @@
 Hello, whoever read this.
 I test my program on .txt files because I can see if there's invalid (for ASCII) symbols...   .-3 spaces
+(P.s. tested on another files extensions and it works well)
 
 (some break lines)
 
