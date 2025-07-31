@@ -3,7 +3,7 @@ I test my program on .txt files because I can see if there's invalid (for ASCII)
 (P.s. tested on another files extensions and it works well)
 
 (some break lines)
-
+👍💩😢❌🕵️‍♀️🔷🛌👺⚽🏆
 .     .5 spaces
 
 ...or if theres data loss.
