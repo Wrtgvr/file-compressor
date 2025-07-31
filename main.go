@@ -5,17 +5,17 @@ import (
 	"os"
 )
 
-// var (
-// 	// byte-separator, placed between file data and file name
-// 	FILE_NAME_SEPARATOR_BYTES []byte = []byte("NAME_SEP")
-// )
-
 // 1. if symbol use N bits & N < 8, then we can use N bits instead of a byte to store that symbol
-// (how to work with bits in golang???)
+// I forgot name of the guy who invented method which use binary tree to separate data by amount of used bits
+// Also I didn't really understood that method, I need read about it again.
 
 const (
 	// how much bytes take for every iteration through file data
 	FILE_DATA_ON_READ_PART_SIZE int64 = 200
+	// how much bytes use for storing length of file name
+	FILE_NAME_BYTES_LENGTH int8 = 2
+	// how much bytes use for storing length of file data
+	FILE_DATA_BYTES_LENGTH int8 = 4
 	// folders paths
 	INPUT_FOLDER  = "input"
 	OUTPUT_FOLDER = "output"
