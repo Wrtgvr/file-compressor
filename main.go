@@ -11,11 +11,15 @@ import (
 
 const (
 	// how much bytes take for every iteration through file data
-	FILE_DATA_ON_READ_PART_SIZE int64 = 200
+	FILE_DATA_ON_READ_PART_SIZE int64 = 200 // tbh idk what size will be best
+	//! I don't think changing FILE_..._BYTES_LENGTH is good idea
+	//! cuz if it changed then you might need to change some lines like this:
+	//! binary.BigEndian.PutUint16(...)
+	//!! just don't change it unless you ready to search for every piece of code which need to be changed
 	// how much bytes use for storing length of file name
-	FILE_NAME_BYTES_LENGTH int8 = 2
+	FILE_NAME_BYTES_LENGTH int8 = 2 // use N bytes to store file name/path length
 	// how much bytes use for storing length of file data
-	FILE_DATA_BYTES_LENGTH int8 = 4
+	FILE_DATA_BYTES_LENGTH int8 = 4 // use N bytes to store file data length
 	// folders paths
 	INPUT_FOLDER  = "input"
 	OUTPUT_FOLDER = "output"
