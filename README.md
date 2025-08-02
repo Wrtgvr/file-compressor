@@ -1,3 +1,4 @@
+# DO NOT USE IT ON LARGE FILES BEFORE I FINISH BYTE STREAMING IN FILE
 ## *I had no internet for a few days so I was bored of doing nothing and came up with that programm idea*
 I tried to make something like zip,
 but I had no idea how to make actuall compression (tried to figure it out by myself) of bytes so it will weight less than original file.
